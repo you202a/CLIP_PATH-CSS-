@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@800&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+    min-height: 100vh;
+    font-family: 'MuseoModerno', cursive;
+    background:  #2c2b33;
+}
+.menu ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #ff4757;
+    border-radius:  5px;
+    padding:  24px;
+}
+.menu ul li {
+    padding:  24px;
+    margin: 12px;
+    background: #ffffff;
+    border-radius:  50%;
+    color: #121212; 
+}
+.menu{
+    clip-path: circle(24px at 28px 28px);
+    transition: clip-path .8s ease-in-out;
+}
+.menu:hover{
+    clip-path: circle(465px at 28px 28px);
+    cursor: pointer;
+}
